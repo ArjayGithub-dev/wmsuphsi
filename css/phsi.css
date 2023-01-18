@@ -5,7 +5,7 @@
   --color-white: #fff;
   --color-black: #222;
   --color-green: #107869;
-  --color-light-gree: #0eb582;
+  --color-light-green: #0eb582;
 }
 
 
@@ -53,14 +53,14 @@ section {
 /*-------HEADING START----------*/
 .heading-link {
     text-align: center;
-    background: url(../images/heading-bg.jpg) no-repeat;
+    background: url("../images/carousel-images/phsi-carousel.jpg") no-repeat;
     background-size: cover;
     background-position: center;
 }
   
 .heading-link h3 {
     font-size: 4rem;
-    text-transform: capitalize;
+    text-transform: none;
     color: #444;
 }
   
@@ -167,6 +167,13 @@ section {
   font-weight: 400;
 }
 
+.header .navbar a i{
+  font-size: 20px;
+  padding: 0 5px;
+  margin: 3px;
+  
+}
+
 .header .navbar a:hover {
   color: #0eb582;
 }
@@ -174,7 +181,6 @@ section {
 .header .icons div {
   cursor: pointer;
   font-size: 16px;
-  font-style: 'Poppins';
   font-weight: 400;
   color:  #107869;
   margin-left: 1.5rem;
@@ -182,7 +188,7 @@ section {
 
 .header .icons div a {
   color:  #107869;
-  padding: 5px;
+  padding: 5px; 
 }
 
 .header .icons div:hover {
@@ -197,6 +203,77 @@ section {
 .header #menu-btn {
   display: none;
 }
+
+ /* Dropdown Button */
+ .dropbtn {
+  margin-right: 4rem;
+  font-size: 16px;
+  text-transform: capitalize;
+  color:  black;
+  font-weight: 400;
+  background-color: white;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    width: fit-content;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+  color: black;
+  width: 100%;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    color: #0eb582;
+  } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*-----------HEADER END----------*/
 
@@ -501,6 +578,7 @@ section {
   padding: 1rem 0;
 }
 
+
 .free_content .content .icons-container {
   margin-top: 1rem;
   display: -ms-grid;
@@ -696,6 +774,290 @@ section {
 
 /*---------------- ANNOUNCEMENTS END -------------------*/
 
+/*---------------- ADMINISTRATION START -------------------*/
+
+.administration{
+  
+}
+
+.administration .slide {
+  text-align: center;
+}
+
+.administration .slide:hover .image img {
+  background: #0eb582;
+}
+
+.administration .slide:hover .image .share {
+  bottom: 0;
+}
+
+.administration .slide .image {
+  position: relative;
+  overflow: hidden;
+}
+
+.administration .slide .image img {
+  background: #e8faf4;
+  width: 100%;
+}
+
+.administration .slide .image .share {
+  position: absolute;
+  bottom: -10rem;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 2rem;
+}
+
+.administration .slide .image .share a {
+  font-size: 3rem;
+  margin: 0 1rem;
+  color: #fff;
+}
+
+.administration .slide .image .share a:hover {
+  color: #0eb582;
+}
+
+
+
+
+.administration .slide .content h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #444;
+}
+
+.administration .slide .content span {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #777;
+}
+
+
+/*---------------- ADMINISTRATION END -------------------*/
+
+/*---------------- HISTORY CONTENT START -------------------*/
+.history {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.history .image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.history .image img {
+  width: 100%;
+}
+
+.history .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.history  .content .about-title {
+  font-size: 4.5rem;
+  text-transform: none;
+  color: #444;
+}
+
+.history .content p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #777;
+  padding: 1rem 0;
+}
+
+
+.history .content .icons-container {
+  margin-top: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(16rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 2rem;
+}
+
+.history .content .icons-container .icons {
+  text-align: center;
+  border: 0.1rem solid #0eb582;
+  background: #f0fdfa;
+  padding: 3rem 2rem;
+}
+
+.history .content .icons-container .icons img {
+  height: 5rem;
+  margin-bottom: .5rem;
+}
+
+.history .content .icons-container .icons h3 {
+  padding: .5rem 0;
+  font-size: 3rem;
+  text-transform: capitalize;
+  color: #444;
+}
+
+.history .content .icons-container .icons span {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #777;
+}
+/*---------------- HISTORY CONTENT END ------------------*/
+
+/*---------------- MISSION AND VISION START ------------------*/
+.misvis{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.misvis .misvis-content .misvis-title {
+  font-size: 4.5rem;
+  text-transform: none;
+  color: #444;
+}
+
+.misvis .misvis-content  p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #777;
+  padding: 1rem 0;
+}
+/*---------------- MISSION AND VISION END ------------------*/
+
+
+/*---------------- CONTACT START ------------------*/
+.contact .icons-container {
+  margin-bottom: 3rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+
+.contact .icons-container .icons {
+  text-align: center;
+  padding: 3rem 2rem;
+  border: 0.1rem solid #0eb582;
+  background: #f0fdfa;
+}
+
+.contact .icons-container .icons i {
+  height: 6rem;
+  width: 6rem;
+  line-height: 6rem;
+  font-size: 2rem;
+  border-radius: 50%;
+  margin-bottom: .5rem;
+  color: #fff;
+  background: #0eb582;
+}
+
+.contact .icons-container .icons h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #444;
+  padding: .5rem 0;
+}
+
+.contact .icons-container .icons p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #777;
+}
+
+.contact .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.contact .row .image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.contact .row .image img {
+  width: 100%;
+}
+
+.contact .row form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  border: 0.1rem solid #0eb582;
+  padding: 2rem;
+}
+
+.contact .row form h3 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  color: #444;
+  padding-bottom: 1rem;
+}
+
+.contact .row form .box {
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  border: 0.1rem solid #0eb582;
+  font-size: 1.6rem;
+  margin: .7rem 0;
+}
+
+.contact .row form .box:focus {
+  background: #0eb582;
+  color: #fff;
+}
+
+.contact .row form .box:focus::-webkit-input-placeholder {
+  color: #eee;
+}
+
+.contact .row form .box:focus:-ms-input-placeholder {
+  color: #eee;
+}
+
+.contact .row form .box:focus::-ms-input-placeholder {
+  color: #eee;
+}
+
+.contact .row form .box:focus::placeholder {
+  color: #eee;
+}
+
+.contact .row form textarea {
+  height: 15rem;
+  resize: none;
+}
+/*---------------- CONTACT END ------------------*/
+
 
 
 /*---------------- FOOTER START -------------------*/
@@ -853,3 +1215,5 @@ section {
   }
 }
 /*---------------- MEDIA QUERY : RESPONSIVENESS END  -------------------*/
+
+

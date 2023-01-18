@@ -65,7 +65,26 @@ var swiper = new Swiper(".home-courses-slider", {
   },
 });
 
-
+var swiper = new Swiper(".administration-slider", {
+  loop:true,
+  grabCursor:true,
+  spaceBetween: 20,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    991: {
+      slidesPerView: 3,
+    },
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  }
+});
 
 var swiper = new Swiper(".reviews-slider", {
   loop:true,
@@ -80,6 +99,29 @@ var swiper = new Swiper(".reviews-slider", {
     },
     991: {
       slidesPerView: 3,
+    },
+  },
+});
+
+var swiper = new Swiper(".logo-slider", {
+  loop:true,
+  grabCursor:true,
+  spaceBetween: 20,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    450: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    991: {
+      slidesPerView: 4,
+    },
+    1200: {
+      slidesPerView: 5,
     },
   },
 });

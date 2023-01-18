@@ -12,7 +12,10 @@
    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
    <!-- Custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="./css/phsi.css">
+
+   <!-- Custom IconScunt for this template-->
+   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
    <!-- Title and Logo in tab -->
    <link rel="icon" type="image/png" href="images/logos/phsi.png">
@@ -26,15 +29,30 @@
 <header class="header">
    <!-- Logo -->
    <!--<img src="phsi.png" alt="">-->
-   <a href="#" class="logo">PHSI</a>
+   <a href="home.php" class="logo">PHSI</a>
    <!-- Navbar -->
    <nav class="navbar">
       <div id="close-navbar" class="fas fa-times"></div>
-      <a href="#">Home</a>
-      <a href="#">About PHSI</a>
-      <a href="#">Announcements</a>
-      <a href="#">Organizations</a>
-      <a href="#">Upcoming Events</a>
+      <a href="home.php">Home</a>
+      <div class="dropdown">
+         <button class="dropbtn">About PHSI</button>
+         <div class="dropdown-content">
+            <a href="history.php">History</a>
+            <a href="misvis.php">Mission & Vision</a>
+            <a href="administration.php">Administration</a>
+            <a href="contact.php">Contact</a>
+         </div>
+      </div> 
+      <a href="news.php">News & Features</a>
+      <div class="dropdown">
+         <button class="dropbtn">Organizations</button>
+         <div class="dropdown-content">
+            <a href="unesco.php">WMSU Youth Peace Mediators -<br>
+             UNESCO Club</a>
+            <a href="biorisk.php">Biorisk Management and Security</a>
+         </div>
+      </div> 
+      <a href="events.php">Upcoming Events</a>
    </nav>
 
    <div class="icons">
@@ -144,7 +162,7 @@
       <h3 class="about-title">Call for Donations</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam hic magnam fugit exercitationem neque, quae laboriosam natus. Ut maxime assumenda facere ea quasi accusamus dolores delectus tempora animi, expedita iste.
          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam hic magnam fugit exercitationem neque, quae laboriosam natus.</p>
-      <a href="#" class="btn">I want to donate</a>
+      <a href="callfordonations.php" class="btn">I want to donate</a>
    </div>
 </section>
 <!-------------------------------------------  Free Content: CALL FOR DONATIONS/VOLUNTEERS/FEATURED ARTICLES End -------------------------------------------------------------------------------------------->
