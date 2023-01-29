@@ -10,47 +10,42 @@
 </section>
 
 <section class="announcements">
-
-   <h1 class="heading"> Recent News & Features </h1>
-
    <div class="box-container">
-      
-   <div class="box">
-      <div class="image">
-         <img src="images/content-images/phsi-p1.jpg" alt="">
-         <h3>Date posted</h3>
+      <div class="box">
+         <div class="image">
+            <img src="images/content-images/unesco-canton.jpg" alt="">
+            <h3>Jan 16, 2023</h3>
+         </div>
+         <div class="content">
+            <h3>In the Light of the Recent Flood in Zamboanga City</h3>
+            <!--<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, odit!</p>-->
+            <a href="#" class="btn">read more</a>
+         </div>
       </div>
-      <div class="content">
-         <h3>Announcement Title</h3>
-         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, odit!</p>
-         <a href="news-page.php" class="btn">Read more</a>
-      </div>
-   </div>
 
-   <div class="box">
-      <div class="image">
-         <img src="images/content-images/phsi-p2.jpg" alt="">
-         <h3>Date posted</h3>
+      <div class="box">
+         <div class="image">
+            <img src="images/content-images/phsi-dialogue.jpg"  alt="">
+            <h3>Nov 26, 2022</h3>
+         </div>
+         <div class="content">
+            <h3>Harnessing our Peace Efforts: Towards Solidarity in Service</h3>
+            <!--<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, odit!</p>-->
+            <a href="#" class="btn">read more</a>
+         </div>
       </div>
-      <div class="content">
-         <h3>Announcement Title</h3>
-         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, odit!</p>
-         <a href="#" class="btn">Read more</a>
-      </div>
-   </div>
 
-
-   <div class="box">
-      <div class="image">
-         <img src="images/content-images/phsi-p3.jpg" alt="">
-         <h3>Date posted</h3>
+      <div class="box">
+         <div class="image">
+            <img src="images/content-images/unesco-youthleader.png"  alt="">
+            <h3>Nov 12, 2022</h3>
+         </div>
+         <div class="content">
+         <h3>2022 UNESCO Club Outstanding Youth Leader (College Level)!</h3>
+            <!--<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, odit!</p>-->
+            <a href="#" class="btn">read more</a>
+         </div>
       </div>
-      <div class="content">
-         <h3>Announcement Title</h3>
-         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, odit!</p>
-         <a href="#" class="btn">Read more</a>
-      </div>
-   </div>
 
 
    <div class="box">

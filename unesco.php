@@ -18,12 +18,13 @@
    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
    <!-- Title and Logo in tab -->
-   <link rel="icon" type="image/png" href="images/logos/phsi.png">
+   <link rel="icon" type="image/png" href="images/logos/unesco.png">
    <title>WMSU Youth Peace Mediators - UNESCO Club</title>
 
 </head>
 <body>
    
+   <p>Wait for signal!</p>
 
 
 </body>

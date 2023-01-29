@@ -8,6 +8,12 @@
   --color-light-green: #0eb582;
 }
 
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
 
 * {
   font-family: 'Poppins', sans-serif;
@@ -48,42 +54,43 @@ html::-webkit-scrollbar-thumb {
 
 section {
   padding: 5rem 10%;
+
 }
 
 /*-------HEADING START----------*/
 .heading-link {
-    text-align: center;
-    background: url("../images/carousel-images/phsi-carousel.jpg") no-repeat;
-    background-size: cover;
-    background-position: center;
+  text-align: center;
+  background: url("../images/carousel-images/phsi-carousel.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
 }
   
 .heading-link h3 {
-    font-size: 4rem;
-    text-transform: none;
-    color: #444;
+  font-size: 4rem;
+  text-transform: none;
+  color: #444;
 }
   
 .heading-link p {
-    font-size: 2rem;
-    line-height: 2;
-    color: #777;
+  font-size: 2rem;
+  line-height: 2;
+  color: #777;
 }
   
 .heading-link p a {
-    color: #0eb582;
+  color: #0eb582;
 }
   
 .heading-link p a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
   
 .heading {
-    text-align: center;
-    margin-bottom: 3rem;
-    font-size: 3.5rem;
-    text-transform: capitalize;
-    color: #444;
+  text-align: center;
+  margin: 3rem;
+  font-size: 3.5rem;
+  text-transform: none;
+  color: #444;
 }
 
 /*-------HEADING END----------*/
@@ -255,26 +262,6 @@ section {
     color: #0eb582;
   } 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*-----------HEADER END----------*/
 
 
@@ -283,8 +270,8 @@ section {
   position: fixed;
   top: 0;
   right: -105%;
-  width: 40rem;
-  background: #fff;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -292,7 +279,7 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  gap: 2rem;
+  gap: 6rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -312,9 +299,9 @@ section {
   position: absolute;
   top: 1.5rem;
   right: 2.5rem;
-  font-size: 4rem;
+  font-size: 2.5rem;
   cursor: pointer;
-  color: #444;
+  color: white;
 }
 
 .account-form #close-form:hover {
@@ -330,6 +317,8 @@ section {
 
 .account-form form.active {
   display: block;
+  width: 40rem;
+  background: var(--color-white);
 }
 
 .account-form form h3 {
@@ -367,13 +356,13 @@ section {
 
 .account-form form .flex a {
   font-size: 1.5rem;
-  color: #777;
+  color: var(--color-green);
   margin-left: auto;
 }
 
 .account-form form .flex a:hover {
   text-decoration: underline;
-  color: #0eb582;
+  color: var(--color-light-green);
 }
 
 .account-form form .btn {
@@ -388,6 +377,7 @@ section {
   background: var(--color-green);
   color: #fff;
 }
+
 /*-----------LOGIN ACCOUNT FORM END----------*/
 
 
@@ -519,6 +509,7 @@ section {
 .organization .box-container .box img {
   height: 10rem;
   margin-bottom: .7rem;
+  display: initial;
 }
 
 .organization .box-container .box h3 {
@@ -567,7 +558,7 @@ section {
 
 .free_content .content .about-title {
   font-size: 4.5rem;
-  text-transform: capitalize;
+  text-transform: none;
   color: #444;
 }
 
@@ -634,7 +625,7 @@ section {
 .reviews .slide p::before {
   content: '';
   position: absolute;
-  bottom: -1.2rem;
+  bottom: -1.1rem;
   left: 50%;
   -webkit-transform: translateX(-50%) rotate(45deg);
           transform: translateX(-50%) rotate(45deg);
@@ -649,6 +640,7 @@ section {
   height: 7rem;
   width: 7rem;
   border-radius: 50%;
+  display: -webkit-inline-box;
 }
 
 .reviews .slide h3 {
@@ -730,7 +722,7 @@ section {
 
 .announcements .box-container .box .content h3 {
   font-size: 2rem;
-  text-transform: capitalize;
+  text-transform: none;
   color: #444;
 }
 
@@ -770,6 +762,7 @@ section {
 .announcements .load-more {
   margin-top: 2rem;
   text-align: center;
+
 }
 
 /*---------------- ANNOUNCEMENTS END -------------------*/
@@ -1059,6 +1052,142 @@ section {
 /*---------------- CONTACT END ------------------*/
 
 
+/*---------------- NEWS START ------------------*/
+.news{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.news .news-content .news-title {
+  font-size: 4.5rem;
+  text-transform: none;
+  color: #444;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.news .news-content .image {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  width: 100%;
+}
+
+.news .news-content .desc {
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  margin: 20px;
+  text-align: center;
+  font-size: 12px;
+
+}
+
+.news .news-content .desc p {
+  font-size: 1.5rem;
+  width: 600px;
+  justify-content: center;
+  display: flex;
+  padding: inherit;
+}
+
+
+.news  .news-content  p {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #777;
+  padding: 1rem 0;
+}
+
+/*---------------- NEWS END ------------------*/
+
+
+/*---------------- EVENTS START ------------------*/
+.events-container {
+  display: flex;
+	justify-content: center;
+  margin: 50px;
+}
+
+.event {
+	background-color: #fff;
+	/*border-radius: 10px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); */
+	display: flex;
+	max-width: 100%;
+	margin: 15px;
+	overflow: hidden;
+	width: 1000px;
+}
+
+.event h6 {
+	opacity: 0.6;
+	margin: 0;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.event h2 {
+	letter-spacing: 1px;
+	margin: 10px 0;
+}
+
+.event-image-container {
+  justify-content: center;
+  align-items: center;
+  display: grid;
+	background-color: transparent;
+	color: #fff;
+	/*padding: ; */
+	max-width: 250px;
+
+
+}
+
+.event-image-container img {
+  height: 20rem;
+  border-radius: 50%;
+  width: 25rem;
+}
+
+
+.event-info {
+	padding: 30px;
+	position: relative;
+	width: 100%;
+}
+
+
+.event-info h6 {
+  font-size: 12px;
+}
+
+.event-info span {
+  color: var(--color-green);
+}
+
+.event-info h2 {
+  font-size: 20px;
+}
+
+.event-info .event-content {
+  padding-bottom: 10px;
+}
+
+.event-info .event-content p {
+  font-size: 14px;
+}
+
+
+/*---------------- EVENTS END ------------------*/
 
 /*---------------- FOOTER START -------------------*/
 
@@ -1164,6 +1293,7 @@ section {
 @media (max-width: 768px) {
   .header #menu-btn {
     display: inline-block;
+    display: none;
   }
   .header .navbar {
     position: fixed;
@@ -1215,5 +1345,6 @@ section {
   }
 }
 /*---------------- MEDIA QUERY : RESPONSIVENESS END  -------------------*/
+
 
 

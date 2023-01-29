@@ -29,12 +29,11 @@
    </nav>
 
    <div class="icons">
-      <div id="account-btn" class="fas fa-user"><a href="">Login</a></div>
-      <div id="menu-btn" class="fas fa-bars"></div>
+      <div id="account-btn">Login</div>
+      <div id="menu-btn" class="fas fa-bars">Menu</div>
    </div>
 </header>
 <!-- Header Section End -->
-
 
 <!-- Account Form Section Start  -->
 <div class="account-form">
@@ -43,7 +42,7 @@
       <span class="btn active login-btn">Login</span>
       <span class="btn register-btn">Register</span>
    </div>
-
+   <div class="forms-container" style="justify-content: center;display: grid; ">
    <form class="login-form active" action="">
       <h3>Login now</h3>
       <input type="email" placeholder="Enter your email" class="box">
@@ -64,4 +63,8 @@
       <input type="submit" value="Register now" class="btn">
    </form>
 </div>
+</div>
 <!-- Account Form Section End  -->
+
+
+

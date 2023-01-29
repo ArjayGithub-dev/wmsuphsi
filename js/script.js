@@ -40,8 +40,14 @@ var swiper = new Swiper(".home-slider", {
     el: ".swiper-pagination",
     clickable:true,
   },
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: true,
+  },
+  effect: "fade", 
   loop:true,
-  grabCursor:true,
+  grabCursor:false
+  ,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -141,3 +147,22 @@ document.querySelector('.load-more .btn').onclick = () =>{
   });
   document.querySelector('.load-more .btn').style.display = 'none';
 };
+
+
+
+
+// INSERT JS HERE
+
+
+// SOCIAL PANEL JS
+const floating_btn = document.querySelector('.floating-btn');
+const close_btn = document.querySelector('.close-btn');
+const social_panel_container = document.querySelector('.social-panel-container');
+
+floating_btn.addEventListener('click', () => {
+	social_panel_container.classList.toggle('visible')
+});
+
+close_btn.addEventListener('click', () => {
+	social_panel_container.classList.remove('visible')
+});

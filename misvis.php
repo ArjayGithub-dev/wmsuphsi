@@ -9,7 +9,7 @@
    <p> <a href="home.php">Home</a> / Mission & Vision </p>
 </section>
 
-<!-- History Section starts  -->
+<!-- Mission and Vission Section starts  -->
 
 <section class="misvis">
     <div class="misvis-content">
@@ -41,7 +41,7 @@ capabilities, and talents of the people of Mindanao and the country.</p>
 
 </section>
 
-<!-- Hisroty section ends -->
+<!--  Mission and Vission section ends -->
 
 
 <?php
